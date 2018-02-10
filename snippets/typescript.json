@@ -1,0 +1,35 @@
+{
+	"csl": {
+		"prefix": "csl",
+		"body": [
+			"console.log(${1:'here'});"
+		],
+		"description": "Console Log"
+	},
+	"tsimport": {
+		"prefix": "tsimport",
+		"body": [
+			"import { ${1:Component} } from '${2:./}';"
+		]
+	},
+	"ngimport": {
+		"prefix": "ngimport",
+		"body": [
+			"import { ${1:Component} } from '@angular/${2:}';"
+		]
+	},
+	"nginput": {
+		"prefix": "nginput",
+		"body": [
+			"@Input() ${1:variable} = ${2:value};"
+		],
+		"description": "Angular Input"
+	},
+	"ngoutput": {
+		"prefix": "ngoutput",
+		"body": [
+			"@Output() ${1:variable} = new EventEmitter();"
+		],
+		"description": "Angular Input"
+	}
+}

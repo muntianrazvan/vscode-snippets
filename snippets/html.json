@@ -1,0 +1,79 @@
+{
+	"ngClass": {
+		"prefix": "ngclass",
+		"body": [
+			"[ngClass]=\"{'${1:class}': ${2:condition}}\""
+		],
+		"description": "Angular ngClass directive"
+	},
+	"ngFor": {
+		"prefix": "ngfor",
+		"body": [
+			"*ngFor=\"let ${1:item} of ${2:list}\""
+		],
+		"description": "Angular ngFor directive"
+	},
+	"ngIf": {
+		"prefix": "ngif",
+		"body": [
+			"*ngIf=\"${1:condition}\""
+		],
+		"description": "Angular ngIf directive"
+	},
+	"bsContainer": {
+		"prefix": "bscontainer",
+		"body": [
+			"<div class=\"container\">\n\t$1\n</div>"
+		],
+		"description": "Bootstrap Container Div"
+	},
+	"bsRow": {
+		"prefix": "bsrow",
+		"body": [
+			"<div class=\"row\">\n\t$1\n</div>"
+		],
+		"description": "Bootstrap Row Div"
+	},
+	"bsxs": {
+		"prefix": "bsxs",
+		"body": [
+			"<div class=\"col-xs-${1:6}\">\n\t$6\n</div>"
+		],
+		"description": "Bootstrap Extra Small Div"
+	},
+	"bssm": {
+		"prefix": "bssm",
+		"body": [
+			"<div class=\"col-sm-${1:6}\">\n\t$6\n</div>"
+		],
+		"description": "Bootstrap Small Div"
+	},
+	"bsmd": {
+		"prefix": "bsmd",
+		"body": [
+			"<div class=\"col-md-${1:6}\">\n\t$6\n</div>"
+		],
+		"description": "Bootstrap Medium Div"
+	},
+	"bslg": {
+		"prefix": "bslg",
+		"body": [
+			"<div class=\"col-lg-${1:6}\">\n\t$6\n</div>"
+		],
+		"description": "Bootstrap Medium Div"
+	},
+	"bsbutton": {
+		"prefix": "bsbutton",
+		"body": [
+			"<button type=\"button\" class=\"btn ${1:btn-default}\">${2:Button}</button>"
+		],
+		"description": "Bootstrap Default Button"
+	},
+	"fa": {
+		"prefix": "fa",
+		"body": [
+			"<i class=\"fa fa-${1:home}\"></i>"
+		],
+		"description": "Font Awesome Icon"
+	}
+}

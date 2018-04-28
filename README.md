@@ -17,10 +17,20 @@ Snippets I use on a daily basis. These snippets can come handy if you use Bootst
 | fa          | `<i class="fa fa-${1:home}"></i>`                                         |
 
 ## Typescript snippets
-| Snippet  | Outcome                                                |
-|----------|--------------------------------------------------------|
-| csl      | `console.log(${1:'here'});`                            |
-| tsimport | `import { ${1:Component} } from '${2:./}';`            |
-| ngimport | `import { ${1:Component} } from '@angular/${2:core}';` |
-| nginput  | `@Input() ${1:variable} = ${2:value};`                 |
-| ngoutput | `@Output() ${1:variable} = new EventEmitter();`        |
+| Snippet     | Outcome                                                |
+|-------------|--------------------------------------------------------|
+| csl         | `console.log(${1:'here'});`                            |
+| tsimport    | `import { ${1:Component} } from '${2:./}';`            |
+| ngimport    | `import { ${1:Component} } from '@angular/${2:core}';` |
+| nginput     | `@Input() ${1:variable} = ${2:value};`                 |
+| ngoutput    | `@Output() ${1:variable} = new EventEmitter();`        |
+| ngcomponent | `import { Component, OnInit } from '@angular/core';`   |
+|             | `@Component({`                                         |
+|             | `   selector: 'app-${1:sample}',`                      |
+|             | `   templateUrl: './sample.component.html',`           |
+|             | `   styleUrls: ['./sample.component.less']`            |
+|             | `})`                                                   |
+|             | `export class SampleComponent implements OnInit {`     |
+|             | `   constructor() {}`                                  |
+|             | `   ngOnInit() {}`                                     |
+|             | `}`                                                    |

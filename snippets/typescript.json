@@ -31,5 +31,24 @@
 			"@Output() ${1:variable} = new EventEmitter();"
 		],
 		"description": "Angular Input"
+	},
+	"ngcomponent": {
+		"prefix": "ngcomponent",
+		"body": [
+			"import { Component, OnInit } from '@angular/core';",
+			"",
+			"@Component({",
+			"\tselector: 'app-${1:sample}',",
+			"\ttemplateUrl: './sample.component.html',",
+			"\tstyleUrls: ['./sample.component.less']",
+			"})",
+			"export class SampleComponent implements OnInit {",
+			"\tconstructor() {}",
+			"",
+			"\tngOnInit() {}",
+			"}",
+			""
+		],
+		"description": "Angular Typescript Component"
 	}
 }

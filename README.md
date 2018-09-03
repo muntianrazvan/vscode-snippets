@@ -24,13 +24,63 @@ Snippets I use on a daily basis. These snippets can come handy if you use Bootst
 | ngimport    | `import { ${1:Component} } from '@angular/${2:core}';` |
 | nginput     | `@Input() ${1:variable} = ${2:value};`                 |
 | ngoutput    | `@Output() ${1:variable} = new EventEmitter();`        |
-| ngcomponent | `import { Component, OnInit } from '@angular/core';`   |
-|             | `@Component({`                                         |
-|             | `   selector: 'app-${1:sample}',`                      |
-|             | `   templateUrl: './sample.component.html',`           |
-|             | `   styleUrls: ['./sample.component.less']`            |
-|             | `})`                                                   |
-|             | `export class SampleComponent implements OnInit {`     |
-|             | `   constructor() {}`                                  |
-|             | `   ngOnInit() {}`                                     |
-|             | `}`                                                    |
+
+**ngcomponent** 
+
+```
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+    selector: 'app-sample',
+    templateUrl: './sample.component.html',
+    styleUrls: ['./sample.component.less']
+})
+export class SampleComponent implements OnInit {
+    constructor() {}
+
+    ngOnInit() {}
+}
+```
+
+**ngmodule**
+
+```
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+@NgModule({
+    imports: [
+        CommonModule,
+        FormsModule,
+        ReactiveFormsModule
+    ],
+    declarations: [],
+    providers: []
+})
+export class AppModule { }
+```
+
+**ngroutes**
+
+```
+import { RouterModule } from '@angular/router';
+
+const SampleRoutes = RouterModule.forChild([{
+    path: '',
+    component: SampleComponent,
+    canActivate: [CanActivateRoute],
+    data: {},
+    children: [{
+        path: '',
+        redirectTo: 'overview',
+        pathMatch: 'full'
+    }, {
+        path: 'overview',
+        component: SampleOverviewComponent
+    }, {
+        path: 'details',
+        component: SampleDetailsComponent
+    }]
+}];
+```

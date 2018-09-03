@@ -50,5 +50,52 @@
 			""
 		],
 		"description": "Angular Typescript Component"
+	},
+	"ngmodule": {
+		"prefix": "ngmodule",
+		"body": [
+			"import { NgModule } from '@angular/core';",
+			"import { CommonModule } from '@angular/common';",
+			"import { FormsModule, ReactiveFormsModule } from '@angular/forms';",
+			"${1}",
+			"@NgModule({",
+			"\timports: [",
+			"\t\tCommonModule,",
+			"\t\tFormsModule,",
+			"\t\tReactiveFormsModule${2}",
+			"\t],",
+			"\tdeclarations: [${3}],",
+			"\tproviders: [${4}]",
+			"})",
+			"export class ${5:AppModule} { }",
+			""
+		],
+		"description": "Angular Typescript Module"
+	},
+	"ngroutes": {
+		"prefix": "ngroutes",
+		"body": [
+			"import { RouterModule } from '@angular/router';",
+			"",
+			"const ${1:SampleRoutes} = RouterModule.forChild([{",
+			"\tpath: '',",
+			"\tcomponent: ${2:SampleComponent},",
+			"\tcanActivate: [${3:CanActivateRoute}],",
+			"\tdata: {${4}},",
+			"\tchildren: [{",
+			"\t\tpath: '',",
+			"\t\tredirectTo: 'overview',",
+			"\t\tpathMatch: 'full'",
+			"\t}, {",
+			"\t\tpath: 'overview',",
+			"\t\tcomponent: SampleOverviewComponent",
+			"\t}, {",
+			"\t\tpath: 'details',",
+			"\t\tcomponent: SampleDetailsComponent",
+			"\t}]",
+			"}];",
+			""
+		],
+		"description": "Angular Typescript Routes"
 	}
 }

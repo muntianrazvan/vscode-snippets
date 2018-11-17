@@ -6,6 +6,13 @@
 		],
 		"description": "Angular ngClass directive"
 	},
+	"ngStyle": {
+		"prefix": "ngstyle",
+		"body": [
+			"[ngStyle]=\"{'${1:property}': ${2:condition}}\""
+		],
+		"description": "Angular ngStyle directive"
+	},
 	"ngFor": {
 		"prefix": "ngfor",
 		"body": [

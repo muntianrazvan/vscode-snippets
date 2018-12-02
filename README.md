@@ -5,6 +5,7 @@ Snippets I use on a daily basis. These snippets can come handy if you use Bootst
 | Snippet     | Outcome                                                                   |
 |-------------|---------------------------------------------------------------------------|
 | ngclass     | `[ngClass]="{'${1:class}': ${2:condition}}"`                              |
+| ngstyle     | `[ngStyle]="{'${1:property}': ${2:style}}"`                               |
 | ngfor       | `*ngFor="let ${1:item} of ${2:list}"`                                     |
 | ngif        | `*ngIf="${1:condition}"`                                                  |
 | bscontainer | `<div class="container">$1</div>`                                         |
@@ -25,7 +26,7 @@ Snippets I use on a daily basis. These snippets can come handy if you use Bootst
 | nginput     | `@Input() ${1:variable} = ${2:value};`                 |
 | ngoutput    | `@Output() ${1:variable} = new EventEmitter();`        |
 
-**ngcomponent** 
+**ngcomponent**
 
 ```
 import { Component, OnInit } from '@angular/core';

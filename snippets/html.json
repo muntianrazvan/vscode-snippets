@@ -9,7 +9,7 @@
 	"ngStyle": {
 		"prefix": "ngstyle",
 		"body": [
-			"[ngStyle]=\"{'${1:property}': ${2:condition}}\""
+			"[ngStyle]=\"{'${1:property}': ${2:value}}\""
 		],
 		"description": "Angular ngStyle directive"
 	},

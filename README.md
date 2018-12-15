@@ -43,6 +43,17 @@ export class SampleComponent implements OnInit {
 }
 ```
 
+**ngservice**
+
+```
+import { Injectable } from '@angular/core';
+
+@Injectable()
+export class MyService {
+
+}
+```
+
 **ngmodule**
 
 ```

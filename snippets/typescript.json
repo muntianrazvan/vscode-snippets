@@ -51,6 +51,18 @@
 		],
 		"description": "Angular Typescript Component"
 	},
+	"ngservice": {
+		"prefix": "ngservice",
+		"body": [
+			"import { Injectable } from '@angular/core';",
+			"",
+			"@Injectable()",
+			"export class ${1:MyService} {",
+			"\t${2}",
+			"}",
+			""
+		]
+	},
 	"ngmodule": {
 		"prefix": "ngmodule",
 		"body": [

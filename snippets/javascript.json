@@ -1,0 +1,24 @@
+{
+    "describe": {
+        "prefix": "describe",
+        "body": [
+            "describe('${1:Description}', () => {",
+            "\t$2",
+            "});"
+        ]
+    },
+    "it": {
+        "prefix": "it",
+        "body": [
+            "it('${1:Test}', () => {",
+            "\t$2",
+            "});"
+        ]
+    },
+    "expect-to-equal": {
+        "prefix": "expect-to-equal",
+        "body": [
+            "expect($1).to.equal($2);"
+        ]
+    }
+}

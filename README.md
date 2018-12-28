@@ -96,3 +96,27 @@ const SampleRoutes = RouterModule.forChild([{
     }]
 }];
 ```
+
+## Javascript snippets
+
+**describe**
+
+```
+describe('Description', () => {
+    
+});
+```
+
+**it**
+
+```
+it('Test', () => {
+    
+});
+```
+
+**expect-to-equal**
+
+```
+expect().to.equal();
+```

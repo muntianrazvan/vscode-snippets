@@ -120,3 +120,17 @@ it('Test', () => {
 ```
 expect().to.equal();
 ```
+
+## Javascript React snippets
+
+**componenet**
+
+```
+import React from 'react'
+
+class Component extends React.Component {
+
+}
+
+export default Component
+```

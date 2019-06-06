@@ -1,0 +1,15 @@
+{
+	"component": {
+		"prefix": "component",
+		"body": [
+			"import React from 'react'",
+			"",
+			"class ${1:Component} extends React.Component {",
+			"",
+			"}",
+			"",
+			"export default ${1:Component}"
+		],
+		"description": "React component"
+	}
+}
